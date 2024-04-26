@@ -1,0 +1,8 @@
+---
+import "./StatisticsCol.scss";
+const {value, title, className = ""} = Astro.props;
+---
+<li class:list={["statistics-col", className]}>
+    <div class="statistics-col__value">{value}</div>
+    <div class="statistics-col__title">{title}</div>
+</li>

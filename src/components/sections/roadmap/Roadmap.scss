@@ -1,0 +1,54 @@
+.roadmap {
+  position: relative;
+  height: 991px;
+
+  &__separator {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__stage {
+    width: 430px;
+    position: absolute;
+    left: 0;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      content: "";
+      width: 60%;
+      height: 60%;
+      border-radius: 50%;
+      filter: blur(100px);
+      z-index: -1;
+    }
+    &-right {
+      left: auto;
+      right: 0;
+    }
+    &-order {
+      &-1 {
+        top: 0;
+        rotate: 5deg;
+        &:before {background-color: #9B45FD;}
+      }
+      &-2 {
+        top: 225px;
+        rotate: -5deg;
+        &:before {background-color: #3848D9;}
+      }
+      &-3 {
+        top: 450px;
+        rotate: -5deg;
+        &:before {background-color: #3AD4E9;}
+      }
+      &-4 {
+        top: 675px;
+        rotate: 5deg;
+        &:before {background-color: #E93AD7;}
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "_nullstyles";
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+
+}

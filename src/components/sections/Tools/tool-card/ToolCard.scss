@@ -1,0 +1,46 @@
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    border-radius: 24px;
+    background-color: #222126;
+    border: 2px solid var(--black-400);
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 30%;
+      filter: blur(20px);
+      z-index: 1;
+    }
+  }
+
+  &_blue &__img:before {
+    background-color: #6E89F2;
+  }
+  &_orange &__img:before {
+    background-color: #FFBB3E;
+  }
+  &_green &__img:before {
+    background-color: #008C73;
+  }
+  &_light-blue &__img:before {
+    background-color: #54C9F8;
+  }
+  &_purple &__img:before {
+    background-color: #9158F1;
+  }
+
+  &__title {
+    font-size: 14px;
+  }
+}

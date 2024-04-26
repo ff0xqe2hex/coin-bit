@@ -1,0 +1,17 @@
+.statistics-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+
+  &__value {
+    color: var(--text-secondary);
+    font-size: 28px;
+    font-weight: var(--fw-bold);
+  }
+
+  &__title {
+    color: var(--text-secondary);
+    font-size: 24px;
+  }
+}

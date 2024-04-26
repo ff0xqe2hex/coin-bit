@@ -1,0 +1,12 @@
+---
+import "./Feedback.scss";
+import TextGradient from "@components/ui/text-gradient/TextGradient.astro";
+const {className = ""} = Astro.props;
+---
+<div class:list={["feedback", className]}>
+    <TextGradient className="feedback__title" color="purple-light-blue">Get regular digest</TextGradient>
+    <form class="feedback__form feedback-form">
+        <label class="feedback-form__input-wrapper"><input type="email" placeholder="Your Email" tabindex="1"/></label>
+        <button class="feedback-form__button" type="button" tabindex="2">Subscribe</button>
+    </form>
+</div>

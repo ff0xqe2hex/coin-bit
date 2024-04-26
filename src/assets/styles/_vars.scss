@@ -1,0 +1,51 @@
+@import "_fonts";
+
+:root {
+  // Font-weight
+  --fw-extrathin: 100;
+  --fw-thin: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+
+  // Container limited
+  --limited: 1330px;
+
+  // Font-family
+  --ff-first: "SF-Pro-Display";
+
+  --white-100: #ffffff;
+  --black-100: #000000;
+  --black-200: #05010D;
+  --black-300: #0A0417;
+  --black-400: #444444;
+  --black-500: #B1B1B1;
+  --black-600: #CCCCCC;
+  --yellow-100: #FFCF54;
+  --light-blue-100: #92E5FF;
+  --blue-100: #5465FF;
+  --red-100: #FF003D;
+  --green-100: #54FFA3;
+
+  // Colors
+  --purple-light-blue-gradient: linear-gradient(to right, #A041FF 1%, #B5A6FF 24%, #B6CCFF 50%, #38A0D9 75%, #8DF8FF 100%);
+  --white-light-blue-gradient: linear-gradient(to right, #FFFFFF 0%, #2975AB 94%, #9BD0F5 100%);
+  --blue-purple-gradient: linear-gradient(45deg, #38A0D9 0%, #A041FF 100%);
+  // Text colors
+  --text-primary: var(--white-100);
+  --text-secondary: var(--black-500);
+  --text-color-second: var(--color-blue-100);
+
+  // Transition
+  --t-first: .3s;
+
+  --border-radius: 24px;
+  --section-padding: 80px;
+
+  // Background colors
+  --bg-primary: var(--black-100);
+}

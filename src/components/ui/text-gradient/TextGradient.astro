@@ -1,0 +1,5 @@
+---
+import "./TextGradient.scss";
+const {color, className = ""} = Astro.props;
+---
+<span class:list={["text-gradient", className, color]}><slot /></span>

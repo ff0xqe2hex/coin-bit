@@ -1,0 +1,43 @@
+---
+import "./Games.scss";
+import GameCard from "./game-card/GameCard.astro";
+import TextGradient from "@components/ui/text-gradient/TextGradient.astro";
+---
+<div class="games">
+    <div class="games__row">
+        <GameCard
+                className="games__row-card"
+                title="Metaverse"
+                subtitle="Duel"
+        >
+            Lorem ipsum <TextGradient color="purple-light-blue">dolor sit amet</TextGradient>, consectetur adipiscing elit. Donec sollicitudin egestas lacus, et pulvinar neque. Morbi leo turpis, auctor ac pulvinar sit amet, volutpat ac arcu. Crasullamcorper <TextGradient color="purple-light-blue">pellentesque</TextGradient> molestie.
+        </GameCard>
+        <div class="games__row-video">
+            <img src="game-duel-preview.png" alt="Game duel"/>
+        </div>
+    </div>
+    <div class="games__row games__row_reverse">
+        <GameCard
+                className="games__row-card"
+                title="Metaverse"
+                subtitle="Clicker"
+        >
+            Lorem ipsum <TextGradient color="purple-light-blue">dolor sit amet</TextGradient>, consectetur adipiscing elit. Donec sollicitudin egestas lacus, et pulvinar neque. Morbi leo turpis, auctor ac pulvinar sit amet, volutpat ac arcu. Crasullamcorper <TextGradient color="purple-light-blue">pellentesque</TextGradient> molestie.
+        </GameCard>
+        <div class="games__row-video">
+            <img src="game-duel-preview.png" alt="Game duel"/>
+        </div>
+    </div>
+    <div class="games__row">
+        <GameCard
+                className="games__row-card"
+                title="Metaverse"
+                subtitle="Open world"
+        >
+            Lorem ipsum <TextGradient color="purple-light-blue">dolor sit amet</TextGradient>, consectetur adipiscing elit. Donec sollicitudin egestas lacus, et pulvinar neque. Morbi leo turpis, auctor ac pulvinar sit amet, volutpat ac arcu. Crasullamcorper <TextGradient color="purple-light-blue">pellentesque</TextGradient> molestie.
+        </GameCard>
+        <div class="games__row-video">
+            <img src="game-duel-preview.png" alt="Game duel"/>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+.stage-card {
+  background: var(--purple-light-blue-gradient);
+  border-radius: 12px;
+  padding: 3px;
+
+  &__body {
+    background-color: var(--bg-primary);
+    padding: 45px 35px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    gap: 25px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: var(--fw-bold);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &-decoration {
+      display: flex;
+      padding-right: 10px;
+
+      span {
+        margin-right: -10px;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        background: var(--white-light-blue-gradient);
+      }
+    }
+  }
+  &__points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__point {
+    font-size: 24px;
+
+    &:before {
+      content: "- ";
+    }
+  }
+}

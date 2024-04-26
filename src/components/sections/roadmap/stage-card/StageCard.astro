@@ -1,0 +1,21 @@
+---
+import "./StageCard.scss";
+import TextGradient from "@components/ui/text-gradient/TextGradient.astro";
+const {order, points, className = ""} = Astro.props;
+---
+<div class:list={["stage-card", className]}>
+    <div class="stage-card__body">
+        <div class="stage-card__title">
+            <TextGradient color="white-light-blue">Stage {order}</TextGradient>
+            <div class="stage-card__title-decoration">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <TextGradient color="white-light-blue">Q{order} 2024</TextGradient>
+        </div>
+        <ul class="stage-card__points">
+            {points.map(point => <li class="stage-card__point">{point}</li>)}
+        </ul>
+    </div>
+</div>

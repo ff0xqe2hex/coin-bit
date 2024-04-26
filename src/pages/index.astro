@@ -1,0 +1,36 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/ui/container/Container.astro";
+import Games from "@components/sections/games/Games.astro";
+import SectionTitle from "@components/ui/section-title/SectionTitle.astro";
+import Roadmap from "@components/sections/roadmap/Roadmap.astro";
+import Tools from "@components/sections/Tools/Tools.astro";
+import Section from "@components/ui/section/Section.astro";
+import Hero from "../components/sections/hero/Hero.astro";
+---
+
+<Layout title="Coin Bit">
+    <Section>
+        <Container>
+            <Hero />
+        </Container>
+    </Section>
+    <Section>
+        <Container>
+            <SectionTitle>Games</SectionTitle>
+            <Games />
+        </Container>
+    </Section>
+    <Section>
+        <Container>
+            <SectionTitle>Works with</SectionTitle>
+            <Tools />
+        </Container>
+    </Section>
+    <Section>
+        <Container>
+            <SectionTitle>Our Roadmap</SectionTitle>
+            <Roadmap />
+        </Container>
+    </Section>
+</Layout>

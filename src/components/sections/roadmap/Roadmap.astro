@@ -1,0 +1,13 @@
+---
+import "./Roadmap.scss";
+import StageCard from "./stage-card/StageCard.astro";
+---
+<div class="roadmap">
+    <div class="roadmap__separator">
+        <img src="roadmap-separator.png" alt="Roadmap separator">
+    </div>
+    <StageCard className=`roadmap__stage roadmap__stage-order-${1}` order={1} points={["Ideation", "Proof of concept", "Business Deck", "Security Audit", "Token on EVM"]}/>
+    <StageCard className=`roadmap__stage roadmap__stage-right roadmap__stage-order-${2}` order={2} points={["Ideation", "Proof of concept", "Business Deck", "Security Audit", "Token on EVM"]}/>
+    <StageCard className=`roadmap__stage roadmap__stage-order-${3}` order={3} points={["Ideation", "Proof of concept", "Business Deck", "Security Audit", "Token on EVM"]}/>
+    <StageCard className=`roadmap__stage roadmap__stage-right roadmap__stage-order-${4}` order={4} points={["Ideation", "Proof of concept", "Business Deck", "Security Audit", "Token on EVM"]}/>
+</div>

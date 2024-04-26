@@ -1,0 +1,10 @@
+---
+import "./ToolCard.scss";
+const {title, img, color, className = ""} = Astro.props;
+---
+<li class:list={["tool-card", className, `tool-card_${color}`]}>
+    <div class="tool-card__img">
+        <img src={img} alt={`${title} logo`} />
+    </div>
+    <div class="tool-card__title">{title}</div>
+</li>

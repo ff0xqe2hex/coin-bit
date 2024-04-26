@@ -1,0 +1,8 @@
+---
+import "./Title.scss";
+const {level, color = "primary", className = ""} = Astro.props;
+const Tag = `h${level}`;
+---
+<Tag class:list={[color, className]}>
+    <slot />
+</Tag>

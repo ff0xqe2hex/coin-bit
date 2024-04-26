@@ -1,0 +1,38 @@
+.feedback {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 40px;
+    font-weight: var(--fw-bold);
+  }
+}
+
+.feedback-form {
+  display: flex;
+  height: 100%;
+  max-height: 50px;
+
+  &__input-wrapper {
+    height: 100%;
+    border: 1px solid var(--black-400);
+    border-right: none;
+    border-radius: 12px 0 0 12px;
+    input {
+      font-size: 20px;
+      background-color: transparent;
+      padding: 13px 33px;
+      color: var(--white-100);
+
+      &::placeholder {
+        color: var(--text-secondary);
+      }
+    }
+  }
+  &__button {
+    border-radius: 0 12px 12px 0;
+    height: 100%;
+    font-size: 20px;
+    padding: 13px 36px;
+  }
+}

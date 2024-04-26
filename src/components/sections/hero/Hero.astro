@@ -1,0 +1,33 @@
+---
+import "./Hero.scss";
+import TextGradient from "@components/ui/text-gradient/TextGradient.astro";
+import Title from "@components/ui/title/Title.astro";
+import Button from "@components/ui/button/Button.astro";
+import Statistics from "./statistics/Statistics.astro";
+---
+<div class="hero">
+    <div class="hero__offer offer">
+        <div class="offer__blobs offer-blobs">
+            <div class="offer-blobs__wrapper">
+                <div class="offer-blobs__blob offer-blobs__blob_a"></div>
+                <div class="offer-blobs__blob offer-blobs__blob_b"></div>
+                <div class="offer-blobs__blob offer-blobs__blob_c"></div>
+            </div>
+        </div>
+        <div class="offer__body">
+            <Title level="1">
+                <TextGradient color="purple-light-blue">Let’s Explore
+                    Three-Dimensional visual
+                </TextGradient>
+            </Title>
+            <div class="offer__buttons">
+                <Button>Get started</Button>
+                <Button>Whitepaper</Button>
+            </div>
+            <p class="offer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam.</p>
+            <Statistics className="offer__statistics"/>
+            <p style={{display: "flex", alignItems: "center", justifyContent: "center"}}>Protected by <img src="easy-anticheat-logo.png" alt="Easy anticheat logo"></p>
+        </div>
+    </div>
+</div>

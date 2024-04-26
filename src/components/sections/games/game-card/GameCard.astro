@@ -1,0 +1,14 @@
+---
+import "./GameCard.scss";
+import Title from "@components/ui/title/Title.astro";
+import Button from "@components/ui/button/Button.astro";
+const {title, subtitle, className = ""} = Astro.props;
+---
+<div class:list={["game-card", className]}>
+    <Title level="3" className="game-card__title">
+        <span>{title}</span>
+        <span>{subtitle}</span>
+    </Title>
+    <div class="game-card__text"><slot /></div>
+    <Button class="game-card__button">Try it</Button>
+</div>
